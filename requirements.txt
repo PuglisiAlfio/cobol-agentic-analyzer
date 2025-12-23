@@ -1,0 +1,13 @@
+marimo
+langchain
+langchain-core
+langchain-mistralai
+langchain-huggingface
+langchain-mcp-adapters
+langgraph
+langgraph-supervisor
+mcp
+reportlab
+pandas
+mlflow
+huggingface_hub

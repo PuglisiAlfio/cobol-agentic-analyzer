@@ -128,7 +128,7 @@ def _(Any, Dict, os, re, tool):
         """
         import os
         # Configurazione percorso e formati supportati
-        project_dir = r"C:\Users\39340\Desktop\Accounting-System-main"
+        project_dir = os.path.join(os.getcwd(), "samples") #PATH DEFAULT
         estensioni = ('.COB', '.CBL', '.cob', '.cbl')
 
         documentazione_grezza = []
@@ -164,7 +164,7 @@ def _(Any, Dict, os, re, tool):
     def censimento_cobol(_: Dict[str, Any] = None) -> str:
         """Scansiona la cartella e recensisce TUTTI i file presenti."""
         import os
-        project_dir = r"C:\Users\39340\Desktop\Accounting-System-main"
+        project_dir = os.path.join(os.getcwd(), "samples") #PATH DEFAULT
 
         # Verifica se il percorso esiste
         if not os.path.exists(project_dir):
@@ -845,4 +845,5 @@ def _(diagramma_agent, mo, re, user_prompt_2):
 
 if __name__ == "__main__":
     app.run()
+
 

@@ -253,7 +253,7 @@ def _(Any, Dict, os, re, tool):
         """
         Analizza i file .TXT del progetto per descriverne struttura e contenuti.
         """
-        project_dir = r"C:\Users\39340\Desktop\Accounting-System-main"
+        project_dir = r"\Accounting-System-main"
 
         # Percorsi predefiniti dei file database e prodotti
         files = {
@@ -435,14 +435,14 @@ async def _(
     tool,
 ):
     # --- Percorso completo del server MCP ---
-    SERVER_PATH = r"C:\Users\39340\Desktop\ai-multiagents-architectures\server\mcp_cobol_server.py"
+    SERVER_PATH = r"\mcp_cobol_server.py"
 
     # Modello di embedding
     embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
     # Parametri per avviare il server MCP usando Python del venv
     server_params = StdioServerParameters(
-        command=r"C:\Users\39340\Desktop\ai-multiagents-architectures\.venv\Scripts\python.exe",
+        command=r"\ai-multiagents-architectures\.venv\Scripts\python.exe",
         args=[SERVER_PATH]
     )
 
@@ -845,3 +845,4 @@ def _(diagramma_agent, mo, re, user_prompt_2):
 
 if __name__ == "__main__":
     app.run()
+

@@ -6,7 +6,7 @@ mcp = FastMCP(
 )
 
 # Percorsi dei file del progetto
-PROJECT_DIR = r"MYPATH"
+PROJECT_DIR = r"./samples/"
 ACCOUNTING_FILE = os.path.join(PROJECT_DIR, "ACCOUNTING_SYSTEM.COB")
 BUYROUTINE_FILE = os.path.join(PROJECT_DIR, "BUYROUTINE.COB")
 DATABASE_FILE = os.path.join(PROJECT_DIR, "DATABASE.txt")
@@ -58,3 +58,4 @@ def get_products() -> str:
 if __name__ == '__main__':
 
     mcp.run(transport="stdio")
+

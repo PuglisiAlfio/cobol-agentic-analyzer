@@ -24,3 +24,8 @@ server_mcp.py: Server per l'ingestion dinamica dei file.
 Installazione: pip install -r requirements.txt
 API Key: Configura MISTRAL_API_KEY nel tuo ambiente.
 Avvio: Esegui marimo edit cobol_agent.py per aprire l'interfaccia di analisi.
+
+Fonte dei Dati e Crediti
+I file sorgente COBOL e i relativi database di test utilizzati per dimostrare le capacità dell'agente sono tratti dal progetto Open Source:
+Repository originale: Accounting-System di osha-san: https://github.com/osha-san/Accounting-System.
+Utilizzo: I file sono stati impiegati per testare le funzionalità di estrazione logica, censimento componenti e generazione di diagrammi di flusso del sistema Multi-Agente.
